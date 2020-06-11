@@ -1,0 +1,61 @@
+SET DATABASE UNIQUE NAME HSQLDB64FB13FA13
+SET DATABASE GC 0
+SET DATABASE DEFAULT RESULT MEMORY ROWS 0
+SET DATABASE EVENT LOG LEVEL 0
+SET DATABASE TRANSACTION CONTROL LOCKS
+SET DATABASE DEFAULT ISOLATION LEVEL READ COMMITTED
+SET DATABASE TRANSACTION ROLLBACK ON CONFLICT TRUE
+SET DATABASE TEXT TABLE DEFAULTS ''
+SET DATABASE SQL NAMES FALSE
+SET DATABASE SQL REFERENCES FALSE
+SET DATABASE SQL SIZE TRUE
+SET DATABASE SQL TYPES FALSE
+SET DATABASE SQL TDC DELETE TRUE
+SET DATABASE SQL TDC UPDATE TRUE
+SET DATABASE SQL CONCAT NULLS TRUE
+SET DATABASE SQL UNIQUE NULLS TRUE
+SET DATABASE SQL CONVERT TRUNCATE TRUE
+SET DATABASE SQL AVG SCALE 0
+SET DATABASE SQL DOUBLE NAN TRUE
+SET FILES WRITE DELAY 500 MILLIS
+SET FILES BACKUP INCREMENT TRUE
+SET FILES CACHE SIZE 10000
+SET FILES CACHE ROWS 50000
+SET FILES SCALE 32
+SET FILES LOB SCALE 32
+SET FILES DEFRAG 0
+SET FILES NIO TRUE
+SET FILES NIO SIZE 256
+SET FILES LOG TRUE
+SET FILES LOG SIZE 50
+CREATE USER "kevin98" PASSWORD DIGEST '12cdb5056dde6b6333a092cbd59c8796'
+ALTER USER "kevin98" SET LOCAL TRUE
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+SET SCHEMA PUBLIC
+CREATE MEMORY TABLE PUBLIC.MILLONARIO(CODIGO VARCHAR(255),PREGUNTA VARCHAR(255),R1 VARCHAR(255),R2 VARCHAR(255),R3 VARCHAR(255),R4 VARCHAR(255),ACIERTO INTEGER)
+ALTER SEQUENCE SYSTEM_LOBS.LOB_ID RESTART WITH 1
+SET DATABASE DEFAULT INITIAL SCHEMA PUBLIC
+GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.SQL_IDENTIFIER TO PUBLIC
+GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.YES_OR_NO TO PUBLIC
+GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.TIME_STAMP TO PUBLIC
+GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.CARDINAL_NUMBER TO PUBLIC
+GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.CHARACTER_DATA TO PUBLIC
+GRANT DBA TO "kevin98"
+SET SCHEMA SYSTEM_LOBS
+INSERT INTO BLOCKS VALUES(0,2147483647,0)
+SET SCHEMA PUBLIC
+INSERT INTO MILLONARIO VALUES('15','Uno de los libros de J.K Rowling es Harry Potter y :','A: El arca perdida ','B: El prisionero de Azkaban','C: La magia negra','D: Su varita',2)
+INSERT INTO MILLONARIO VALUES('14','Segun el album Magical Mystery Tour de The Beatles\u00bfCual fue el integrante que sali\u00f3 disfrazado de morsa negra en la portada de album ?','A: John Lennon ','B:Paul Mccartney','C: George Harrison ','D: Ringo Starr',2)
+INSERT INTO MILLONARIO VALUES('13','Tecnica que describe y representa detalladamente la superficie de un terreno:','A: Topografia ','B: Serigraf\u00eda','C: Epigraf\u00eda','D: Holograf\u00eda',1)
+INSERT INTO MILLONARIO VALUES('12','\u00bfQuien dirigi\u00f3 la pelicula El Padrino en 1972?','A:  Roman Polanski','B: Franco Zeffirelli','C: Francis Ford Copolla','D: Federico Fellini',3)
+INSERT INTO MILLONARIO VALUES('11','\u00bfComo llamamos a los abejorros que no construyen nidos y recolectan nectar?','A: Abejorros cuco ','B: Abejorros perezosos','C: Abejorros parasitos ','D: Abejorros gitanos ',1)
+INSERT INTO MILLONARIO VALUES('10','La palabra Fougeres,lo que significa copa,deriva su nombre de....','A: del apellido de un famoso del vidrio','B: de un tipo especial de vidrio','C: una planta','D: Una ciudad',4)
+INSERT INTO MILLONARIO VALUES('9','Los astr\u00f3nomos lo definen como...La mas baja culminacion del sol.\u00bfQue t\u00e9rmino es?','A: Tormenta Magnetica ',' B: Verano ','C: Media-noche','D: Eclipse solar',3)
+INSERT INTO MILLONARIO VALUES('8','\u00bfQue isla lleva el nombre de un famoso navegante holandes?','A: Sumatra','B: Madagascar ','C: Kalimantan ','D: Tasmania ',4)
+INSERT INTO MILLONARIO VALUES('7','\u00bfQue tipo de palabra se utiliza en cada version actualizada del sistema operativo Android?','A: El nombre de un dulce','B: El nombre de una temporada','C: El nombre de un oceano','D: El nombre de algun nativo estadounidense',1)
+INSERT INTO MILLONARIO VALUES('6','\u00bfCuantos mares tiene la peninsula Balcanica?','A: 3 ','B: 4','C: 2','D: 5',1)
+INSERT INTO MILLONARIO VALUES('5','\u00bfEn la antigua Grecia las mujeres solo podia participar en un deporte?','A: CARRERA DE CARRUAJES',' B: NATACION  ','C: LUCHA',' D: CORRER',1)
+INSERT INTO MILLONARIO VALUES('4','\u00bfA que elemento quimico se le conoce como Enano Malefico?','A: BERILIO','  B: HAFNIO','C: TELURIO','D: COBALTO',4)
+INSERT INTO MILLONARIO VALUES('3','\u00bfQuien gano el premio novel de Literatura?','A: UN DRAMATURGO',' B: UN NOVELISTA','C: UN ENSAYISTA','D: UN POETA',4)
+INSERT INTO MILLONARIO VALUES('2','\u00bfQue ciudad Fue la sede de la primera edicion del Festival Internacional de cine en 1932?','A: MOSCU ','B: CANNES','C: BERLIN','D: VENECIA ',4)
+INSERT INTO MILLONARIO VALUES('1','\u00bfA qu\u00e9 religi\u00f3n pertenece la filosof\u00eda Zen?','A: BUDISMO','B: TAOISMO','C: HINDUISMO','D: JUDAISMO ',1)
